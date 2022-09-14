@@ -1,0 +1,139 @@
+
+#searchbar{
+	margin-left: 15%;
+	padding:15px;
+	border-radius: 10px;
+}
+
+input[type=text] {
+	/*width: 30%;*/
+	-webkit-transition: width 0.15s ease-in-out;
+	transition: width 0.15s ease-in-out;
+}
+
+/* When the input field gets focus,
+	change its width to 100% */
+input[type=text]:focus {
+	/*width: 70%;*/
+}
+
+
+
+/* unvisited link */
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+  background-color: #3e3e3e; // grey
+}
+
+/* selected link */
+a:active {
+  color: #cbcbcb; // platinum
+  background-color: #181818; // black
+}
+
+ul {
+	position: relative;
+	list-style: none;
+	margin-left: 0;
+	padding-left: 1.2em;
+}
+ul li:before {
+	content: "+";
+	position: absolute;
+	left: 0;
+}
+
+.header {
+  	background-color: #181818; // black
+    color: white; 
+  	text-align: center;
+  	padding-top: 10px;
+  	padding-bottom: 10px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #cbcbcb;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #181818;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #181818;
+  color: white;
+}
+
+
+h1.header {
+	color: white;
+}
+
+h2.department {
+	padding-left: 20px;
+	text-align: left;
+}
+
+h2.course {
+	padding-left: 20px;
+	text-align: left;
+}
+
+hr.course {
+	color: #cbcbcb;
+   margin-left: 40px;
+   
+   width: 85%;
+}
+
+p.course {
+   padding-left: 20px;
+   
+   width: 75%;
+}
+
+td.course{
+	padding-right: 25px;
+	padding-bottom: 10px;
+}
+
+div.coursename {
+	padding-left: 40px;
+}
+
+div.course {
+	padding-top: 20px;
+	padding-left: 20px;
+  	padding-bottom: 20px;
+	padding-right: 50px;
+  
+	text-align: left;
+	
+	
+    background-color: #cbcbcb; 
+  	  
+  	margin-top: 20px;
+  	margin-left: 40px;
+}
+
