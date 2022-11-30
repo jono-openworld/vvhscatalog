@@ -21,173 +21,224 @@
 
   <a href="Math.html">Math</a>
   
-  <a href="javascript:;" onclick="toggleShowHideAll()" style="float: right;" >SHOW/HIDE</a>
+  <a href="javascript:;" onclick="toggleShowHideAll()" style="float: right;" >SHOW/HIDE ALL DETAILS</a>
 </div>
-<br><h2 class = "department">Math</h2>
+
+<br>
+<div class = "checkboxes">
+     <table>
+        <tr>
+            <td>
+                Showing Grades:
+            </td>
+            <td>
+                <input type="checkbox" id="ninthCheck" onclick="toggleShowHideGrade('ninth-grade')" checked>
+                <label for="ninthCheck">9</label> 
+            </td>
+            <td>
+                <input type="checkbox" id="tenthCheck" onclick="toggleShowHideGrade('tenth-grade')" checked >
+                <label for="tenthCheck">10</label> 
+            </td>
+            <td>
+                <input type="checkbox" id="eleventhCheck" onclick="toggleShowHideGrade('eleventh-grade')" checked>
+                <label for="eleventhCheck">11</label> 
+            </td>
+            <td>
+                <input type="checkbox" id="twelvethCheck" onclick="toggleShowHideGrade('twelveth-grade')" checked>
+                <label for="twelvethCheck">12</label> 
+            </td>
+        </tr>
+      </table>
+</div>
+<br><h2 class = "department">Math</h2><div class="grade-level ninth-grade tenth-grade ">
+
 <div class="course-name">35040. <b><a href="javascript:;" onclick="toggleDisplay('35040')">Geometry</a></b> (9, 10)
 </div>
 
-<div class="course-description" id="35040" style="display: none;">
+<div class="course-details" id="35040" style="display: none;">
 
-    <table>
-        <tbody>
-            <tr>
-                <td class="course-td"><b><u>Course Number</u></b></td>
-                <td class="course-td"><b><u>Credits</u></b></td>
-                <td class="course-td"><b><u>Length</u></b></td>
-                <td class="course-td"><b><u>NCAA Approved</u></b></td>
+    <table class="course-table">
+        <tbody>    
+            <tr class="course-tr">
+                <th class="course-th" width="20%"><b>Course Name:</b></th>
+                <th class="course-th">Geometry</th>
             </tr>
-            <tr>
-                <td class="course-td">35040</td><td class="course">1</td>
-                <td class="course-td">Year</td><td class="course">Yes</td>
+            <tr class="course-tr">
+                <td class="course-td"><b>Course Number:</b></td>
+                <td class="course-td">35040</td>
             </tr>
-
-            <tr>
-                <td class="course-td"><b><u>Core Course</u></b></td>
-                <td class="course-td"><b><u>Elective</u></b></td>
-                <td class="course-td"><b><u>Grade</u></b></td>
-            </tr>
-
-            <tr>
-                <td class="course-td">Yes</td>
-                <td class="course-td">No</td>
+            <tr class="course-tr">   
+                <td class="course-td"><b>Grade(s):</b></td>
                 <td class="course-td">9, 10</td>
+            </tr>
+            <tr class="course-tr">
+                <td class="course-td"><b>Credits:</b></td>
+                <td class="course-td">1</td>
+            </tr>
+            <tr class="course-tr">
+                <td class="course-td"><b>Length:</b></td>
+                <td class="course-td">Year</td>
+            </tr>
+            <tr class="course-tr">
+                <td class="course-td"><b>NCAA Approved:</b></td>
+                <td class="course-td">Yes</td>
+            </tr>
+            <tr class="course-tr">
+                <td class="course-td"><b>Core Course:</b></td>
+                <td class="course-td">Yes</td>               
+            </tr>
+            <tr class="course-tr">
+                <td class="course-td"><b>Elective:</b></td>
+                <td class="course-td">No</td>
+            </tr>
+            <tr class="course-tr">   
+                <td class="course-td"><b>Prerequisites:</b></td>
+                <td class="course-td">Algebra 1</td>
+            </tr>
+            <tr class="course-tr">   
+                <td class="course-td"><b>Description:</b></td>
+                <td class="course-td">In Geometry the student learns abstract and logical thinking through inductive and deductive reasoning. The student uses lines, planes, polygons, circles, and three-dimensional figures for representing and solving a variety of problems. The student uses  calculators, computers and software programs (e.g. Geometer's Sketchpad, Cabri Geometry), construction tools (e.g. compass, protractor, straight edge), and graphing utilities as tools in problem solving. Other areas of study include global processes; algebra, functions, and graphs; and data analysis and probability. Literacy strategies are integrated throughout the curriculum. </td>
+            </tr>
+            <tr class="course-tr">   
+                <td class="course-td"><b>Notes:</b></td>
+                <td class="course-td">Geometry notes</td>
             </tr>
         </tbody>
     </table>
-    
-    <br>
-    <b><u>Prerequisites</u></b> 
-    <br>
-    Algebra 1
-    <br>
-    <br>
-    <b><u>Description</u></b> 
-    <br>
-    In Geometry the student learns abstract and logical thinking through inductive and deductive reasoning. The student uses lines, planes, polygons, circles, and three-dimensional figures for representing and solving a variety of problems. The student uses  calculators, computers and software programs (e.g. Geometer's Sketchpad, Cabri Geometry), construction tools (e.g. compass, protractor, straight edge), and graphing utilities as tools in problem solving. Other areas of study include global processes; algebra, functions, and graphs; and data analysis and probability. Literacy strategies are integrated throughout the curriculum. 
-    <br>
-    <br>
-    <b><u>Notes</u></b>
-    <br>
-    Geometry notes
-    <br>
 </div>
 <div>
     <br>
     <hr class="divider">
     <br>
 </div>
+</div>
+<div class="grade-level ninth-grade tenth-grade ">
 
 <div class="course-name">35080. <b><a href="javascript:;" onclick="toggleDisplay('35080')">Honors Geometry</a></b> (9, 10)
 </div>
 
-<div class="course-description" id="35080" style="display: none;">
+<div class="course-details" id="35080" style="display: none;">
 
-    <table>
-        <tbody>
-            <tr>
-                <td class="course-td"><b><u>Course Number</u></b></td>
-                <td class="course-td"><b><u>Credits</u></b></td>
-                <td class="course-td"><b><u>Length</u></b></td>
-                <td class="course-td"><b><u>NCAA Approved</u></b></td>
+    <table class="course-table">
+        <tbody>    
+            <tr class="course-tr">
+                <th class="course-th" width="20%"><b>Course Name:</b></th>
+                <th class="course-th">Honors Geometry</th>
             </tr>
-            <tr>
-                <td class="course-td">35080</td><td class="course">1</td>
-                <td class="course-td">Year</td><td class="course">Yes</td>
+            <tr class="course-tr">
+                <td class="course-td"><b>Course Number:</b></td>
+                <td class="course-td">35080</td>
             </tr>
-
-            <tr>
-                <td class="course-td"><b><u>Core Course</u></b></td>
-                <td class="course-td"><b><u>Elective</u></b></td>
-                <td class="course-td"><b><u>Grade</u></b></td>
-            </tr>
-
-            <tr>
-                <td class="course-td">Yes</td>
-                <td class="course-td">No</td>
+            <tr class="course-tr">   
+                <td class="course-td"><b>Grade(s):</b></td>
                 <td class="course-td">9, 10</td>
+            </tr>
+            <tr class="course-tr">
+                <td class="course-td"><b>Credits:</b></td>
+                <td class="course-td">1</td>
+            </tr>
+            <tr class="course-tr">
+                <td class="course-td"><b>Length:</b></td>
+                <td class="course-td">Year</td>
+            </tr>
+            <tr class="course-tr">
+                <td class="course-td"><b>NCAA Approved:</b></td>
+                <td class="course-td">Yes</td>
+            </tr>
+            <tr class="course-tr">
+                <td class="course-td"><b>Core Course:</b></td>
+                <td class="course-td">Yes</td>               
+            </tr>
+            <tr class="course-tr">
+                <td class="course-td"><b>Elective:</b></td>
+                <td class="course-td">No</td>
+            </tr>
+            <tr class="course-tr">   
+                <td class="course-td"><b>Prerequisites:</b></td>
+                <td class="course-td">Honors Algebra 1</td>
+            </tr>
+            <tr class="course-tr">   
+                <td class="course-td"><b>Description:</b></td>
+                <td class="course-td">In Honors Geometry the student learns abstract and logical thinking through inductive and deductive reasoning. The student uses advanced concepts in lines, planes, polygons, circles, and three-dimensional figures for representing and solving a variety of problems. The student uses calculators, computers and software programs, construction tools (e.g. compass, protractor, straight edge), and graphing utilities as tools in problem solving. Other areas of study include global processes; algebraic concepts, functions, patterns and graphs; and data analysis and probability. The course also includes an in-depth coverage of some Honors Algebra II/Trigonometry topics. </td>
+            </tr>
+            <tr class="course-tr">   
+                <td class="course-td"><b>Notes:</b></td>
+                <td class="course-td">Literacy strategies are integrated throughout the curriculum. This course carries a weighted grade.</td>
             </tr>
         </tbody>
     </table>
-    
-    <br>
-    <b><u>Prerequisites</u></b> 
-    <br>
-    Honors Algebra 1
-    <br>
-    <br>
-    <b><u>Description</u></b> 
-    <br>
-    In Honors Geometry the student learns abstract and logical thinking through inductive and deductive reasoning. The student uses advanced concepts in lines, planes, polygons, circles, and three-dimensional figures for representing and solving a variety of problems. The student uses calculators, computers and software programs, construction tools (e.g. compass, protractor, straight edge), and graphing utilities as tools in problem solving. Other areas of study include global processes; algebraic concepts, functions, patterns and graphs; and data analysis and probability. The course also includes an in-depth coverage of some Honors Algebra II/Trigonometry topics. 
-    <br>
-    <br>
-    <b><u>Notes</u></b>
-    <br>
-    Literacy strategies are integrated throughout the curriculum. This course carries a weighted grade.
-    <br>
 </div>
 <div>
     <br>
     <hr class="divider">
     <br>
 </div>
+</div>
+<div class="grade-level ninth-grade tenth-grade twelveth-grade ">
 
 <div class="course-name">987951. <b><a href="javascript:;" onclick="toggleDisplay('987951')">AP Calculus BC</a></b> (9, 10, 12)
 </div>
 
-<div class="course-description" id="987951" style="display: none;">
+<div class="course-details" id="987951" style="display: none;">
 
-    <table>
-        <tbody>
-            <tr>
-                <td class="course-td"><b><u>Course Number</u></b></td>
-                <td class="course-td"><b><u>Credits</u></b></td>
-                <td class="course-td"><b><u>Length</u></b></td>
-                <td class="course-td"><b><u>NCAA Approved</u></b></td>
+    <table class="course-table">
+        <tbody>    
+            <tr class="course-tr">
+                <th class="course-th" width="20%"><b>Course Name:</b></th>
+                <th class="course-th">AP Calculus BC</th>
             </tr>
-            <tr>
-                <td class="course-td">987951</td><td class="course">1</td>
-                <td class="course-td">Year</td><td class="course">Yes</td>
+            <tr class="course-tr">
+                <td class="course-td"><b>Course Number:</b></td>
+                <td class="course-td">987951</td>
             </tr>
-
-            <tr>
-                <td class="course-td"><b><u>Core Course</u></b></td>
-                <td class="course-td"><b><u>Elective</u></b></td>
-                <td class="course-td"><b><u>Grade</u></b></td>
-            </tr>
-
-            <tr>
-                <td class="course-td">Yes</td>
-                <td class="course-td">Yes</td>
+            <tr class="course-tr">   
+                <td class="course-td"><b>Grade(s):</b></td>
                 <td class="course-td">9, 10, 12</td>
+            </tr>
+            <tr class="course-tr">
+                <td class="course-td"><b>Credits:</b></td>
+                <td class="course-td">1</td>
+            </tr>
+            <tr class="course-tr">
+                <td class="course-td"><b>Length:</b></td>
+                <td class="course-td">Year</td>
+            </tr>
+            <tr class="course-tr">
+                <td class="course-td"><b>NCAA Approved:</b></td>
+                <td class="course-td">Yes</td>
+            </tr>
+            <tr class="course-tr">
+                <td class="course-td"><b>Core Course:</b></td>
+                <td class="course-td">Yes</td>               
+            </tr>
+            <tr class="course-tr">
+                <td class="course-td"><b>Elective:</b></td>
+                <td class="course-td">Yes</td>
+            </tr>
+            <tr class="course-tr">   
+                <td class="course-td"><b>Prerequisites:</b></td>
+                <td class="course-td">AP Calculus AB
+
+
+
+Español</td>
+            </tr>
+            <tr class="course-tr">   
+                <td class="course-td"><b>Description:</b></td>
+                <td class="course-td">AP Calculus BC is the follow-up to AP Calculus AB.</td>
+            </tr>
+            <tr class="course-tr">   
+                <td class="course-td"><b>Notes:</b></td>
+                <td class="course-td">This is equivalent to most college's Calc II.</td>
             </tr>
         </tbody>
     </table>
-    
-    <br>
-    <b><u>Prerequisites</u></b> 
-    <br>
-    AP Calculus AB
-
-
-
-Español
-    <br>
-    <br>
-    <b><u>Description</u></b> 
-    <br>
-    AP Calculus BC is the follow-up to AP Calculus AB.
-    <br>
-    <br>
-    <b><u>Notes</u></b>
-    <br>
-    This is equivalent to most college's Calc II.
-    <br>
 </div>
 <div>
     <br>
     <hr class="divider">
     <br>
+</div>
 </div>
 
 </body>

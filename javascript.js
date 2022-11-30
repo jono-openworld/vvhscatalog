@@ -1,5 +1,9 @@
 
- let showAllClassDescriptions = true;
+let showAllClassDescriptions = true;
+let showNinthGrade = true;
+let showTenthGrade = true;
+let showEleventhGrade = true;
+let showTwelvethGrade = true;
 
 function toggleDisplay(divId) {
   var divElement;
@@ -20,16 +24,16 @@ function toggleDisplay(divId) {
 
 function toggleShowHideAll(){
 
-	let courselists = document.getElementsByClassName("course-description");
+	let coursesList = document.getElementsByClassName("course-details");
 
-	for (i = 0; i < courselists.length; i++) {
+	for (i = 0; i < coursesList.length; i++) {
 		if (showAllClassDescriptions){
 			/* show */
-			courselists[i].style.display="block";
+			coursesList[i].style.display="block";
 		}
 		else {
 			/* hide */
-			courselists[i].style.display="none";
+			coursesList[i].style.display="none";
 		}
 	}
 
@@ -40,4 +44,106 @@ function toggleShowHideAll(){
 	else{
 		showAllClassDescriptions = true;
 	}
+}
+
+function toggleShowHideGrade(gradeName){
+    switch(gradeName) {
+        case "ninth-grade":
+            showNinthGrade = !showNinthGrade;
+            break;
+        
+        case "tenth-grade":
+            showTenthGrade = !showTenthGrade;
+            break;
+           
+        case "eleventh-grade":
+            showEleventhGrade = !showEleventhGrade;
+                break;
+        
+        case "twelveth-grade":
+            showTwelvethGrade = !showTwelvethGrade;
+            break;
+        
+        default:
+            break;
+    }
+    
+    let showSelector = '';
+    let hideSelector = '.grade-level';
+    
+    if (showNinthGrade == true) {
+        showSelector += '.ninth-grade,';
+    }
+    if (showTenthGrade == true) {
+        showSelector += '.tenth-grade,';
+    }
+    if (showEleventhGrade == true) {
+        showSelector += '.eleventh-grade,';
+    }
+    if (showTwelvethGrade == true) {
+        showSelector += '.twelveth-grade,';
+    }
+    // Remove the final character from selectors
+    showSelector = showSelector.slice(0, -1);
+    
+    
+    /* Hide all courses first */
+    try {
+        console.log(hideSelector);
+        var coursesList = document.querySelectorAll(hideSelector);
+        var count = 0;
+        
+        if (coursesList != null) {
+            /* Loop over courses in list, each course.style.diplay to block */
+            coursesList.forEach((course) => {
+              course.style.display="none";
+              count++;
+            });
+        }
+        
+        console.log(count);
+
+    }
+    catch (e) {
+        console.error(e instanceof SyntaxError);
+        console.error(e.message);
+        console.error(e.name);
+        console.error(e.fileName);
+        console.error(e.lineNumber);
+        console.error(e.columnNumber);
+        console.error(e.stack);
+    }    
+    
+    /* Select courses to show */
+    try {
+        console.log(showSelector);
+        if (showSelector !== ''){           
+            var coursesList = document.querySelectorAll(showSelector);
+            var count = 0;
+            
+            if (coursesList != null) {
+                /* Loop over courses in list, each course.style.diplay to block */
+                coursesList.forEach((course) => {
+                  course.style.display="block";
+                  count++;
+                });
+                console.log(count);
+            }
+        }
+    }
+    catch (e) {
+        console.error(e instanceof SyntaxError);
+        console.error(e.message);
+        console.error(e.name);
+        console.error(e.fileName);
+        console.error(e.lineNumber);
+        console.error(e.columnNumber);
+        console.error(e.stack);
+    }
+
+    
+
+   
+    
+    
 }

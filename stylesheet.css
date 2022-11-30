@@ -92,15 +92,45 @@ hr.divider {
    	width: 85%;
 }
 
-p.course-paragraph {
-    padding-left: 20px;
-   
-    width: 75%;
+
+table.course-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #000000;
 }
 
-td.course-td {
-	padding-right: 25px;
+td.course-td, th.course-th{
+	padding-top: 10px;
+	padding-left: 5px;
 	padding-bottom: 10px;
+	padding-right: 25px;
+	vertical-align: top;
+	line-height: 150%;
+	border-bottom: 1px solid #000000;
+
+}
+
+th.course-th{
+    background-color: #cbcbcb;
+    color: #181818;
+}
+
+
+tr.course-tr:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+tr.course-tr:nth-child(even) {
+    background-color: #fcfcfc;
+}
+
+
+tr.course-tr:hover {
+    background-color: LightYellow;  
+}
+
+div.checkboxes {
+	padding-left: 10px;
 }
 
 div.course-name {
@@ -108,7 +138,7 @@ div.course-name {
 	padding-left: 40px;
 }
 
-div.course-description {
+div.course-details {
     color: #181818;
 	padding-top: 20px;
 	padding-left: 20px;

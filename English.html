@@ -21,61 +21,96 @@
 
   <a href="Math.html">Math</a>
   
-  <a href="javascript:;" onclick="toggleShowHideAll()" style="float: right;" >SHOW/HIDE</a>
+  <a href="javascript:;" onclick="toggleShowHideAll()" style="float: right;" >SHOW/HIDE ALL DETAILS</a>
 </div>
-<br><h2 class = "department">English</h2>
+
+<br>
+<div class = "checkboxes">
+     <table>
+        <tr>
+            <td>
+                Showing Grades:
+            </td>
+            <td>
+                <input type="checkbox" id="ninthCheck" onclick="toggleShowHideGrade('ninth-grade')" checked>
+                <label for="ninthCheck">9</label> 
+            </td>
+            <td>
+                <input type="checkbox" id="tenthCheck" onclick="toggleShowHideGrade('tenth-grade')" checked >
+                <label for="tenthCheck">10</label> 
+            </td>
+            <td>
+                <input type="checkbox" id="eleventhCheck" onclick="toggleShowHideGrade('eleventh-grade')" checked>
+                <label for="eleventhCheck">11</label> 
+            </td>
+            <td>
+                <input type="checkbox" id="twelvethCheck" onclick="toggleShowHideGrade('twelveth-grade')" checked>
+                <label for="twelvethCheck">12</label> 
+            </td>
+        </tr>
+      </table>
+</div>
+<br><h2 class = "department">English</h2><div class="grade-level eleventh-grade twelveth-grade ">
+
 <div class="course-name">64512. <b><a href="javascript:;" onclick="toggleDisplay('64512')">Creating Writing</a></b> (11, 12)
 </div>
 
-<div class="course-description" id="64512" style="display: none;">
+<div class="course-details" id="64512" style="display: none;">
 
-    <table>
-        <tbody>
-            <tr>
-                <td class="course-td"><b><u>Course Number</u></b></td>
-                <td class="course-td"><b><u>Credits</u></b></td>
-                <td class="course-td"><b><u>Length</u></b></td>
-                <td class="course-td"><b><u>NCAA Approved</u></b></td>
+    <table class="course-table">
+        <tbody>    
+            <tr class="course-tr">
+                <th class="course-th" width="20%"><b>Course Name:</b></th>
+                <th class="course-th">Creating Writing</th>
             </tr>
-            <tr>
-                <td class="course-td">64512</td><td class="course">0.5</td>
-                <td class="course-td">Semester</td><td class="course">No</td>
+            <tr class="course-tr">
+                <td class="course-td"><b>Course Number:</b></td>
+                <td class="course-td">64512</td>
             </tr>
-
-            <tr>
-                <td class="course-td"><b><u>Core Course</u></b></td>
-                <td class="course-td"><b><u>Elective</u></b></td>
-                <td class="course-td"><b><u>Grade</u></b></td>
-            </tr>
-
-            <tr>
-                <td class="course-td">No</td>
-                <td class="course-td">Yes</td>
+            <tr class="course-tr">   
+                <td class="course-td"><b>Grade(s):</b></td>
                 <td class="course-td">11, 12</td>
+            </tr>
+            <tr class="course-tr">
+                <td class="course-td"><b>Credits:</b></td>
+                <td class="course-td">0.5</td>
+            </tr>
+            <tr class="course-tr">
+                <td class="course-td"><b>Length:</b></td>
+                <td class="course-td">Semester</td>
+            </tr>
+            <tr class="course-tr">
+                <td class="course-td"><b>NCAA Approved:</b></td>
+                <td class="course-td">No</td>
+            </tr>
+            <tr class="course-tr">
+                <td class="course-td"><b>Core Course:</b></td>
+                <td class="course-td">No</td>               
+            </tr>
+            <tr class="course-tr">
+                <td class="course-td"><b>Elective:</b></td>
+                <td class="course-td">Yes</td>
+            </tr>
+            <tr class="course-tr">   
+                <td class="course-td"><b>Prerequisites:</b></td>
+                <td class="course-td">English 10</td>
+            </tr>
+            <tr class="course-tr">   
+                <td class="course-td"><b>Description:</b></td>
+                <td class="course-td">Creative writing description.</td>
+            </tr>
+            <tr class="course-tr">   
+                <td class="course-td"><b>Notes:</b></td>
+                <td class="course-td"></td>
             </tr>
         </tbody>
     </table>
-    
-    <br>
-    <b><u>Prerequisites</u></b> 
-    <br>
-    English 10
-    <br>
-    <br>
-    <b><u>Description</u></b> 
-    <br>
-    Creative writing description.
-    <br>
-    <br>
-    <b><u>Notes</u></b>
-    <br>
-    
-    <br>
 </div>
 <div>
     <br>
     <hr class="divider">
     <br>
+</div>
 </div>
 
 </body>
