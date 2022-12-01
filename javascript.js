@@ -87,7 +87,7 @@ function toggleShowHideGrade(gradeName){
     showSelector = showSelector.slice(0, -1);
     
     
-    /* Hide all courses first */
+    /* Hide all courses with class ".grade" first */
     try {
         console.log(hideSelector);
         var coursesList = document.querySelectorAll(hideSelector);
@@ -114,7 +114,14 @@ function toggleShowHideGrade(gradeName){
         console.error(e.stack);
     }    
     
-    /* Select courses to show */
+    /* Then select courses to show
+       For example, the selector statement . . .
+       ".ninth-grade, .tenth-grade, .eleventh-grade, .twelveth-grade"
+       ==
+       .ninth-grade || .tenth-grade || .eleventh-grade || .twelveth-grade
+       
+       selects any element with one or more of these classes.
+    */
     try {
         console.log(showSelector);
         if (showSelector !== ''){           

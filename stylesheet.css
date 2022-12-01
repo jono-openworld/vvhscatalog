@@ -89,44 +89,7 @@ hr.divider {
 	color: #181818;
    	margin-left: 40px;
    
-   	width: 85%;
-}
-
-
-table.course-table {
-    width: 100%;
-    border-collapse: collapse;
-    border: 1px solid #000000;
-}
-
-td.course-td, th.course-th{
-	padding-top: 10px;
-	padding-left: 5px;
-	padding-bottom: 10px;
-	padding-right: 25px;
-	vertical-align: top;
-	line-height: 150%;
-	border-bottom: 1px solid #000000;
-
-}
-
-th.course-th{
-    background-color: #cbcbcb;
-    color: #181818;
-}
-
-
-tr.course-tr:nth-child(odd) {
-    background-color: #f0f0f0;
-}
-
-tr.course-tr:nth-child(even) {
-    background-color: #fcfcfc;
-}
-
-
-tr.course-tr:hover {
-    background-color: LightYellow;  
+   	width: 90%;
 }
 
 div.checkboxes {
@@ -140,18 +103,14 @@ div.course-name {
 
 div.course-details {
     color: #181818;
-	padding-top: 20px;
 	padding-left: 20px;
-  	padding-bottom: 20px;
-	padding-right: 50px;
-  
-	text-align: left;
-	
-	
-    background-color: #ffffff;
-  	  
-  	margin-top: 20px;
+	padding-right: 20px;
+	text-align: left; 	  
   	margin-left: 40px;
 
 	width: 80%;
+}
+
+p.course-p {
+    line-height: 125%;
 }
