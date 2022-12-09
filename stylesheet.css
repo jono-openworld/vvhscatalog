@@ -62,44 +62,40 @@ h1.header {
 }
 
 h2.department {
-    color: #181818;
-    padding-left: 20px;
+  color: #181818;
+  padding-left: 20px;
 	text-align: left;
 }
 
 h2.course-name {
-    color: #181818;
+  color: #181818;
 	padding-left: 20px;
 	text-align: left;
 }
 
 hr.divider {
 	color: #181818;
-   	margin-left: 40px;
-   
-   	width: 90%;
 }
 
 div.checkboxes {
 	padding-left: 10px;
 }
 
-div.course-name {
-  color: #181818;
-	padding-left: 40px;
-
+div.course {
+  padding-bottom: 20px;
 }
 
-.course-name a{
-  font-size: 115%;
+div.course-name {
+  color: #181818;
+  padding-left: 40px;
 }
 
 div.course-details {
   color: #181818;
-	padding-top: 20px;
   padding-left: 20px;
 	padding-right: 20px;
-	text-align: left; 	  
+	
+  text-align: left; 	  
   margin-left: 40px;
 
 	width: 80%;
