@@ -26,18 +26,6 @@ a:active {
   text-decoration: none;
 }
 
-ul {
-	position: relative;
-	list-style: none;
-	margin-left: 0;
-	padding-left: 1.2em;
-}
-ul li:before {
-	content: "+";
-	position: absolute;
-	left: 0;
-}
-
 .header {
   	background-color: #181818;  
 	color: white; 
@@ -75,7 +63,7 @@ h1.header {
 
 h2.department {
     color: #181818;
-	padding-left: 20px;
+    padding-left: 20px;
 	text-align: left;
 }
 
@@ -97,16 +85,22 @@ div.checkboxes {
 }
 
 div.course-name {
-    color: #181818;
+  color: #181818;
 	padding-left: 40px;
+
+}
+
+.course-name a{
+  font-size: 115%;
 }
 
 div.course-details {
-    color: #181818;
-	padding-left: 20px;
+  color: #181818;
+	padding-top: 20px;
+  padding-left: 20px;
 	padding-right: 20px;
 	text-align: left; 	  
-  	margin-left: 40px;
+  margin-left: 40px;
 
 	width: 80%;
 }
