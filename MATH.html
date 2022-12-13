@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>VVHS Course Catalog Prototype</title>
+</head>
+
+<body>
+<script src="javascript.js"></script>
+
+<div class="header">
+  <h1 class="header">VVHS Course Catalog Prototype</h1>
+</div>
+
+<div class="topnav">
+  <a href="index.html">All</a>
+
+  <a href="CTE.html">CTE</a>
+
+  <a href="ELA.html">ELA</a>
+
+  <a href="MATH.html">MATH</a>
+
+  <a href="MCNL.html">MCNL</a>
+
+  <a href="SCI.html">SCI</a>
+
+  <a href="SS.html">SS</a>
+
+  <a href="SPED.html">SPED</a>
+  
+  <a href="javascript:;" onclick="toggleShowHideAll()" style="float: right;" >SHOW/HIDE ALL DETAILS</a>
+</div>
+
+<br>
+<div class = "checkboxes">
+     <table>
+        <tr>
+            <td>
+                Showing Grades:
+            </td>
+            <td>
+                <input type="checkbox" id="ninthCheck" onclick="toggleShowHideGrade('ninth-grade')" checked>
+                <label for="ninthCheck">9</label> 
+            </td>
+            <td>
+                <input type="checkbox" id="tenthCheck" onclick="toggleShowHideGrade('tenth-grade')" checked >
+                <label for="tenthCheck">10</label> 
+            </td>
+            <td>
+                <input type="checkbox" id="eleventhCheck" onclick="toggleShowHideGrade('eleventh-grade')" checked>
+                <label for="eleventhCheck">11</label> 
+            </td>
+            <td>
+                <input type="checkbox" id="twelvethCheck" onclick="toggleShowHideGrade('twelveth-grade')" checked>
+                <label for="twelvethCheck">12</label> 
+            </td>
+        </tr>
+      </table>
+</div>
+<br><h2 class = "department">Mathematics</h2><div class="grade-level ninth-grade tenth-grade eleventh-grade twelveth-grade ">
+
+    <div class="course">
+        <div class="course-name">35040. <b><a href="javascript:;" onclick="toggleDisplay('35040')">Geometry.</a></b> (9, 10, 11, 12).
+        </div>
+
+        <div class="course-details" id="35040" style="display: none;">
+            <p class="course-p"><b>Credits:</b> 1
+            </p>  
+            <p class="course-p"><b>Length:</b> Year
+            </p>  
+            <p class="course-p"><b>NCAA Approved:</b> Yes
+            </p>
+            <p class="course-p"><b>Prerequisites:</b> Algebra 1
+            </p>
+            <p class="course-p"><b>Fee:</b> 
+            </p>
+            <p class="course-p"><b>Description:</b> In Geometry the student learns abstract and logical thinking through inductive and deductive reasoning. The student uses lines, planes, polygons, circles, and three-dimensional figures for representing and solving a variety of problems. The student uses  calculators, computers and software programs (e.g. Geometer's Sketchpad, Cabri Geometry), construction tools (e.g. compass, protractor, straight edge), and graphing utilities as tools in problem solving. Other areas of study include global processes; algebra, functions, and graphs; and data analysis and probability. Literacy strategies are integrated throughout the curriculum. 
+            </p>
+            <p class="course-p"><b>Notes:</b> 
+            </p>
+            <hr class="divider">
+            <br>
+        </div>
+    </div>
+</div>
+<div class="grade-level ninth-grade tenth-grade ">
+
+    <div class="course">
+        <div class="course-name">35080. <b><a href="javascript:;" onclick="toggleDisplay('35080')">Honors Geometry.</a></b> (9, 10).
+        </div>
+
+        <div class="course-details" id="35080" style="display: none;">
+            <p class="course-p"><b>Credits:</b> 1
+            </p>  
+            <p class="course-p"><b>Length:</b> Year
+            </p>  
+            <p class="course-p"><b>NCAA Approved:</b> Yes
+            </p>
+            <p class="course-p"><b>Prerequisites:</b> Honors Algebra 1
+            </p>
+            <p class="course-p"><b>Fee:</b> 
+            </p>
+            <p class="course-p"><b>Description:</b> In Honors Geometry the student learns abstract and logical thinking through inductive and deductive reasoning. The student uses advanced concepts in lines, planes, polygons, circles, and three-dimensional figures for representing and solving a variety of problems. The student uses calculators, computers and software programs, construction tools (e.g. compass, protractor, straight edge), and graphing utilities as tools in problem solving. Other areas of study include global processes; algebraic concepts, functions, patterns and graphs; and data analysis and probability. The course also includes an in-depth coverage of some Honors Algebra II/Trigonometry topics. 
+            </p>
+            <p class="course-p"><b>Notes:</b> Literacy strategies are integrated throughout the curriculum. This course carries a weighted grade.
+            </p>
+            <hr class="divider">
+            <br>
+        </div>
+    </div>
+</div>
+<div class="grade-level ninth-grade tenth-grade twelveth-grade ">
+
+    <div class="course">
+        <div class="course-name">38085. <b><a href="javascript:;" onclick="toggleDisplay('38085')">AP Calculus BC.</a></b> (9, 10, 12).
+        </div>
+
+        <div class="course-details" id="38085" style="display: none;">
+            <p class="course-p"><b>Credits:</b> 1
+            </p>  
+            <p class="course-p"><b>Length:</b> Year
+            </p>  
+            <p class="course-p"><b>NCAA Approved:</b> Yes
+            </p>
+            <p class="course-p"><b>Prerequisites:</b> AP Calculus AB
+            </p>
+            <p class="course-p"><b>Fee:</b> 
+            </p>
+            <p class="course-p"><b>Description:</b> AP Calculus BC extends the concepts of limits, differentiation, 
+and integration studied in AP Calculus AB to include sequences, infinite
+ series, and parametric, polar and vector valued functions. More 
+attention is given to techniques of integration using parts, 
+trigonometric substitution, partial fractions, and improper integrals. 
+Optional topics include vector analysis, developed to study lines, 
+planes and surfaces in 3-dimensional space and/or advanced 
+problem-solving techniques used in major mathematics contests. The 
+student develops ideas from analysis throughout AP Calculus BC. The 
+course prepares the student for the BC level Advanced Placement Exam in 
+Calculus and as a result includes an extensive review of relevant 
+topics. 
+    
+            </p>
+            <p class="course-p"><b>Notes:</b> This course carries a weighted grade.
+    
+            </p>
+            <hr class="divider">
+            <br>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
