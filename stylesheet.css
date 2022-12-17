@@ -62,8 +62,20 @@ h1.header {
 }
 
 h2.department {
-  color: #181818;
+  color: #900C3F;
   padding-left: 20px;
+	text-align: left;
+}
+
+h3.fa-subdepartment {
+  color: #0c3f90;
+  padding-left: 30px;
+	text-align: left;
+}
+
+h3.cte-subdepartment {
+  color: #0c3f90;
+  padding-left: 30px;
 	text-align: left;
 }
 
