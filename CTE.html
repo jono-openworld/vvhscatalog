@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>VVHS Course Catalog 2023-2024</title>
+</head>
+
+<body>
+<script src="javascript.js"></script>
+
+<div class="header">
+  <h1 class="header">VVHS Course Catalog 2023-2024</h1>
+</div>
+
+<div class="topnav">
+  <a href="index.html">All</a>
+
+  <a href="CTE.html">CTE</a>
+
+  <a href="FA.html">FA</a>
+
+  <a href="MATH.html">MATH</a>
+
+  <a href="MCNL.html">MCNL</a>
+
+  <a href="PE.html">PE</a>
+
+  <a href="SCI.html">SCI</a>
+
+  <a href="SS.html">SS</a>
+  
+  <a href="javascript:;" onclick="toggleShowHideAll()" style="float: right;" >SHOW/HIDE DETAILS</a>
+</div>
+
+<br>
+<div class = "checkboxes">
+     <table>
+        <tr>
+            <td>
+                Showing Grades:
+            </td>
+            <td>
+                <input type="checkbox" id="ninthCheck" onclick="toggleShowHideGrade('ninth-grade')" checked>
+                <label for="ninthCheck">9</label> 
+            </td>
+            <td>
+                <input type="checkbox" id="tenthCheck" onclick="toggleShowHideGrade('tenth-grade')" checked >
+                <label for="tenthCheck">10</label> 
+            </td>
+            <td>
+                <input type="checkbox" id="eleventhCheck" onclick="toggleShowHideGrade('eleventh-grade')" checked>
+                <label for="eleventhCheck">11</label> 
+            </td>
+            <td>
+                <input type="checkbox" id="twelvethCheck" onclick="toggleShowHideGrade('twelveth-grade')" checked>
+                <label for="twelvethCheck">12</label> 
+            </td>
+        </tr>
+      </table>
+</div>
+<br><h2 class = "department">Career and Technical Education</h2>
+<h3 class = "cte-subdepartment">Trades and Services</h3>
+<div class="grade-level ninth-grade tenth-grade eleventh-grade twelveth-grade ">
+
+    <div class="course">
+        <div class="course-name">696131. <b><a href="javascript:;" onclick="toggleDisplay('696131')">Intro to Robotics.</a></b> (9, 10, 11, 12).
+        </div>
+
+        <div class="course-details" id="696131" style="display: none;">
+        <div class="vertical-line">
+            <p class="course-p"><b>Credits:</b> 1
+            </p>  
+            <p class="course-p"><b>Length:</b> Year
+            </p>  
+            <p class="course-p"><b>NCAA Approved:</b> No
+            </p>
+
+            <p class="course-p"><b>Elective:</b> Yes
+            </p>
+
+            <p class="course-p"><b>Prerequisites:</b> None (Algebra I Highly Recommended)
+            </p>
+            <p class="course-p"><b>Fee:</b> $20/yr
+            </p>
+
+            <p class="course-p"><b>Description:</b> An Engineering laboratory course designed to teach the student digital circuit  principles, functions of electronic devices, and robotics and material fabrication methods. Students design  and build automated systems that incorporate the principles of electrons, physics, and robotics to gain an  enriched understanding of the contemporary mechanical world. 
+            </p>
+  
+        </div>
+        <br>
+        <br>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
