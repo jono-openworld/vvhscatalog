@@ -3,27 +3,27 @@
 /* unvisited link */
 a:link {
   color: #181818; 
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 /* visited link */
 a:visited {
   color: #181818; 
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 /* mouse over link */
 a:hover {
   color: white;
   background-color: #181818;  
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 /* selected link */
 a:active {
   color: #cbcbcb; 
   background-color: #181818;  
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .header {
