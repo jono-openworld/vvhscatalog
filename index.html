@@ -16,88 +16,117 @@
 
 <div class="topnav">
 
-<div class = "checkboxes">
-    <table class = "checkboxes-table">
-        <tr>
-            <td>
-                <strong>Departments:</strong>
-            </td>
+<div class = "checkboxes-div">
+<table class = "checkboxes-table">
+    <tr>
+        <td class = "checkboxes-td">
+            <strong>Depts:</strong>
+        </td>
 
-            <td class = "checkboxes-td">
-                <input type="checkbox" id="Dept-CTE" onclick="toggleShowHideDept('Dept-CTE')" checked>
-                <label for="Dept-CTE">CTE</label> 
-            </td>
+        <td class = "checkboxes-td">
+            <input class = "checkboxes-input" type="checkbox" id="Dept-CTE" onclick="toggleShowHideDept('Dept-CTE')" checked>
+            <label class = "checkboxes-label" for="Dept-CTE">CTE</label> 
+        </td>
 
-            <td class = "checkboxes-td">
-                <input type="checkbox" id="Dept-FA" onclick="toggleShowHideDept('Dept-FA')" checked>
-                <label for="Dept-FA">FA</label> 
-            </td>
+        <td class = "checkboxes-td">
+            <input class = "checkboxes-input" type="checkbox" id="Dept-FA" onclick="toggleShowHideDept('Dept-FA')" checked>
+            <label class = "checkboxes-label" for="Dept-FA">FA</label> 
+        </td>
 
-            <td class = "checkboxes-td">
-                <input type="checkbox" id="Dept-MATH" onclick="toggleShowHideDept('Dept-MATH')" checked>
-                <label for="Dept-MATH">MATH</label> 
-            </td>
+        <td class = "checkboxes-td">
+            <input class = "checkboxes-input" type="checkbox" id="Dept-MATH" onclick="toggleShowHideDept('Dept-MATH')" checked>
+            <label class = "checkboxes-label" for="Dept-MATH">MATH</label> 
+        </td>
 
-            <td class = "checkboxes-td">
-                <input type="checkbox" id="Dept-MCNL" onclick="toggleShowHideDept('Dept-MCNL')" checked>
-                <label for="Dept-MCNL">MCNL</label> 
-            </td>
+    </tr>
 
-        </tr>    
-        <tr>
-            <td>
-            </td>        
+    <tr>
+        <td class = "checkboxes-td">
+        </td>
 
-            <td class = "checkboxes-td">
-                <input type="checkbox" id="Dept-PE" onclick="toggleShowHideDept('Dept-PE')" checked>
-                <label for="Dept-PE">PE</label> 
-            </td>
+        <td class = "checkboxes-td">
+            <input class = "checkboxes-input" type="checkbox" id="Dept-MCNL" onclick="toggleShowHideDept('Dept-MCNL')" checked>
+            <label class = "checkboxes-label" for="Dept-MCNL">MCNL</label> 
+        </td>
 
-            <td class = "checkboxes-td">
-                <input type="checkbox" id="Dept-SCI" onclick="toggleShowHideDept('Dept-SCI')" checked>
-                <label for="Dept-SCI">SCI</label> 
-            </td>
+        <td class = "checkboxes-td">
+            <input class = "checkboxes-input" type="checkbox" id="Dept-PE" onclick="toggleShowHideDept('Dept-PE')" checked>
+            <label class = "checkboxes-label" for="Dept-PE">PE</label> 
+        </td>
 
-            <td class = "checkboxes-td">
-                <input type="checkbox" id="Dept-SS" onclick="toggleShowHideDept('Dept-SS')" checked>
-                <label for="Dept-SS">SS</label> 
-            </td>
+        <td class = "checkboxes-td">
+            <input class = "checkboxes-input" type="checkbox" id="Dept-SCI" onclick="toggleShowHideDept('Dept-SCI')" checked>
+            <label class = "checkboxes-label" for="Dept-SCI">SCI</label> 
+        </td>
 
-        </tr>
+    </tr>
 
-        <tr>
-            <td>
-                <strong>Grades:</strong>
-            </td>
-            <td class = "checkboxes-td">
-                <input type="checkbox" id="ninthCheck" onclick="toggleShowHideGrade('ninth-grade')" checked>
-                <label for="ninthCheck">9</label> 
-            </td>
-            <td class = "checkboxes-td">
-                <input type="checkbox" id="tenthCheck" onclick="toggleShowHideGrade('tenth-grade')" checked >
-                <label for="tenthCheck">10</label> 
-            </td>
-            <td class = "checkboxes-td">
-                <input type="checkbox" id="eleventhCheck" onclick="toggleShowHideGrade('eleventh-grade')" checked>
-                <label for="eleventhCheck">11</label> 
-            </td>
-            <td class = "checkboxes-td">
-                <input type="checkbox" id="twelvethCheck" onclick="toggleShowHideGrade('twelveth-grade')" checked>
-                <label for="twelvethCheck">12</label> 
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <strong>Details:</strong>
-            </td>
-            <td class = "checkboxes-td">
-                <input type="checkbox" id="detailsCheck" onclick="toggleShowHideAll()" unchecked>
-                <label for="detailsCheck">Yes</label> 
-            </td>
-        </tr>
-    </table>
+    <tr>
+        <td class = "checkboxes-td">
+        </td>
+
+        <td class = "checkboxes-td">
+            <input class = "checkboxes-input" type="checkbox" id="Dept-SS" onclick="toggleShowHideDept('Dept-SS')" checked>
+            <label class = "checkboxes-label" for="Dept-SS">SS</label> 
+        </td>
+
+    </tr>
+</table>
+</div>
+
+<div class = "checkboxes-div">
+<table class = "checkboxes-table">
+    <tr>
+        <td class = "checkboxes-td">
+            <strong>Grades:</strong>
+        </td>
+
+        <td class = "checkboxes-td">
+            <input class = "checkboxes-input" type="checkbox" id="ninthCheck" onclick="toggleShowHideGrade('ninth-grade')" checked>
+            <label class = "checkboxes-label" for="ninthCheck">9</label> 
+        </td>
+        
+        <td class = "checkboxes-td">
+            <input class = "checkboxes-input" type="checkbox" id="tenthCheck" onclick="toggleShowHideGrade('tenth-grade')" checked >
+            <label class = "checkboxes-label" for="tenthCheck">10</label> 
+        </td>
+    </tr>
+
+    <tr>
+        <td class = "checkboxes-td">
+        </td>
+
+        <td class = "checkboxes-td">
+            <input class = "checkboxes-input" type="checkbox" id="eleventhCheck" onclick="toggleShowHideGrade('eleventh-grade')" checked>
+            <label class = "checkboxes-label" for="eleventhCheck">11</label> 
+        </td>
+
+        <td class = "checkboxes-td">
+            <input class = "checkboxes-input" type="checkbox" id="twelvethCheck" onclick="toggleShowHideGrade('twelveth-grade')" checked>
+            <label class = "checkboxes-label" for="twelvethCheck">12</label> 
+        </td>
+    </tr>
+</table>
+</div>
+
+<div class = "checkboxes-div">
+<table class = "checkboxes-table">
+    <tr>
+        <td class = "checkboxes-td">
+            <strong>Details:</strong>
+        </td>
+
+        <td class = "checkboxes-td">
+            <input class = "checkboxes-input" type="checkbox" id="detailsCheck" onclick="toggleShowHideAll()" unchecked>
+            <label class = "checkboxes-label" for="detailsCheck">Yes</label> 
+        </td>
+    </tr>
+</table>
+
 </div>
 </div>
+
+
 <div class = "department-div Dept-CTE"><h2 class = "department">Career and Technical Education</h2>
 
 <h3 class = "cte-subdepartment">Business, Marketing, & Finance</h3>
