@@ -33,7 +33,7 @@ a:active {
   	background-color: #181818;  
 	  color: white; 
   	text-align: left;
-  	padding: 5px;
+  	padding: 10px;
 }
 
 /* Style the top navigation bar */
@@ -127,7 +127,9 @@ p.course-p {
 
 div.checkboxes-div {
     float: left;
-    padding: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
 }
 
 table.checkboxes-table{
