@@ -15,52 +15,86 @@
 </div>
 
 <div class="topnav">
-  <a href="index.html">All</a>
 
-  <a href="CTE.html">CTE</a>
-
-  <a href="FA.html">FA</a>
-
-  <a href="MATH.html">MATH</a>
-
-  <a href="MCNL.html">MCNL</a>
-
-  <a href="PE.html">PE</a>
-
-  <a href="SCI.html">SCI</a>
-
-  <a href="SS.html">SS</a>
-  
-  <a href="javascript:;" onclick="toggleShowHideAll()" style="float: right;" >SHOW/HIDE DETAILS</a>
-</div>
-
-<br>
 <div class = "checkboxes">
-     <table>
+    <table class = "checkboxes-table">
         <tr>
             <td>
-                Showing Grades:
+                <strong>Departments:</strong>
             </td>
+
+            <td class = "checkboxes-td">
+                <input type="checkbox" id="Dept-CTE" onclick="toggleShowHideDept('Dept-CTE')" checked>
+                <label for="Dept-CTE">CTE</label> 
+            </td>
+
+            <td class = "checkboxes-td">
+                <input type="checkbox" id="Dept-FA" onclick="toggleShowHideDept('Dept-FA')" checked>
+                <label for="Dept-FA">FA</label> 
+            </td>
+
+            <td class = "checkboxes-td">
+                <input type="checkbox" id="Dept-MATH" onclick="toggleShowHideDept('Dept-MATH')" checked>
+                <label for="Dept-MATH">MATH</label> 
+            </td>
+
+            <td class = "checkboxes-td">
+                <input type="checkbox" id="Dept-MCNL" onclick="toggleShowHideDept('Dept-MCNL')" checked>
+                <label for="Dept-MCNL">MCNL</label> 
+            </td>
+
+            <td class = "checkboxes-td">
+                <input type="checkbox" id="Dept-PE" onclick="toggleShowHideDept('Dept-PE')" checked>
+                <label for="Dept-PE">PE</label> 
+            </td>
+
+            <td class = "checkboxes-td">
+                <input type="checkbox" id="Dept-SCI" onclick="toggleShowHideDept('Dept-SCI')" checked>
+                <label for="Dept-SCI">SCI</label> 
+            </td>
+
+            <td class = "checkboxes-td">
+                <input type="checkbox" id="Dept-SS" onclick="toggleShowHideDept('Dept-SS')" checked>
+                <label for="Dept-SS">SS</label> 
+            </td>
+
+        </tr>
+
+        <tr>
             <td>
+                <strong>Grades:</strong>
+            </td>
+            <td class = "checkboxes-td">
                 <input type="checkbox" id="ninthCheck" onclick="toggleShowHideGrade('ninth-grade')" checked>
                 <label for="ninthCheck">9</label> 
             </td>
-            <td>
+            <td class = "checkboxes-td">
                 <input type="checkbox" id="tenthCheck" onclick="toggleShowHideGrade('tenth-grade')" checked >
                 <label for="tenthCheck">10</label> 
             </td>
-            <td>
+            <td class = "checkboxes-td">
                 <input type="checkbox" id="eleventhCheck" onclick="toggleShowHideGrade('eleventh-grade')" checked>
                 <label for="eleventhCheck">11</label> 
             </td>
-            <td>
+            <td class = "checkboxes-td">
                 <input type="checkbox" id="twelvethCheck" onclick="toggleShowHideGrade('twelveth-grade')" checked>
                 <label for="twelvethCheck">12</label> 
             </td>
         </tr>
-      </table>
+        <tr>
+            <td>
+                <strong>Details:</strong>
+            </td>
+            <td class = "checkboxes-td">
+                <input type="checkbox" id="detailsCheck" onclick="toggleShowHideAll()" unchecked>
+                <label for="detailsCheck">Yes</label> 
+            </td>
+        </tr>
+    </table>
 </div>
-<br><h2 class = "department">Career and Technical Education</h2>
+</div>
+<div class = "department-div Dept-CTE"><h2 class = "department">Career and Technical Education</h2>
+
 <h3 class = "cte-subdepartment">Business, Marketing, & Finance</h3>
 <div class="grade-level eleventh-grade twelveth-grade ">
 
@@ -864,7 +898,9 @@
     </div>
 </div>
 
-<br><h2 class = "department">Fine Arts</h2>
+</div>
+<div class = "department-div Dept-FA"><h2 class = "department">Fine Arts</h2>
+
 <h3 class = "fa-subdepartment">Performing Arts</h3>
 <div class="grade-level tenth-grade eleventh-grade twelveth-grade ">
 
@@ -3113,7 +3149,9 @@
     </div>
 </div>
 
-<br><h2 class = "department">Mathematics</h2><div class="grade-level ninth-grade tenth-grade eleventh-grade twelveth-grade ">
+</div>
+<div class = "department-div Dept-MATH"><h2 class = "department">Mathematics</h2>
+<div class="grade-level ninth-grade tenth-grade eleventh-grade twelveth-grade ">
 
     <div class="course">
         <div class="course-name">33040. <b><a href="javascript:;" onclick="toggleDisplay('33040')">Algebra I.</a></b> (9, 10, 11, 12).
@@ -3635,7 +3673,9 @@
     </div>
 </div>
 
-<br><h2 class = "department">Modern, Classical, and Native Languages</h2><div class="grade-level ninth-grade tenth-grade eleventh-grade twelveth-grade ">
+</div>
+<div class = "department-div Dept-MCNL"><h2 class = "department">Modern, Classical, and Native Languages</h2>
+<div class="grade-level ninth-grade tenth-grade eleventh-grade twelveth-grade ">
 
     <div class="course">
         <div class="course-name">60010. <b><a href="javascript:;" onclick="toggleDisplay('60010')">French I.</a></b> (9, 10, 11, 12).
@@ -4172,7 +4212,9 @@
     </div>
 </div>
 
-<br><h2 class = "department">Physical Education</h2><div class="grade-level ninth-grade ">
+</div>
+<div class = "department-div Dept-PE"><h2 class = "department">Physical Education</h2>
+<div class="grade-level ninth-grade ">
 
     <div class="course">
         <div class="course-name">90000. <b><a href="javascript:;" onclick="toggleDisplay('90000')">Foundations of Physical Education.</a></b> (9).
@@ -4700,7 +4742,9 @@
     </div>
 </div>
 
-<br><h2 class = "department">Science</h2><div class="grade-level ninth-grade ">
+</div>
+<div class = "department-div Dept-SCI"><h2 class = "department">Science</h2>
+<div class="grade-level ninth-grade ">
 
     <div class="course">
         <div class="course-name">41111. <b><a href="javascript:;" onclick="toggleDisplay('41111')">Biology I.</a></b> (9).
@@ -5063,7 +5107,9 @@
     </div>
 </div>
 
-<br><h2 class = "department">Social Studies</h2><div class="grade-level ninth-grade ">
+</div>
+<div class = "department-div Dept-SS"><h2 class = "department">Social Studies</h2>
+<div class="grade-level ninth-grade ">
 
     <div class="course">
         <div class="course-name">10043. <b><a href="javascript:;" onclick="toggleDisplay('10043')">New Mexico History.</a></b> (9).
@@ -5474,6 +5520,7 @@
     </div>
 </div>
 
+</div>
 
 </body>
 </html>
