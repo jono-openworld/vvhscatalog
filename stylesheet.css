@@ -161,7 +161,7 @@ td.checkboxes-td {
   height: 34px;
   position: relative;
   vertical-align: middle;
-  transition: background 0.25s;
+  transition: background 0.15s;
 }
 .toggle-switch:before, .toggle-switch:after {
   content: "";
@@ -176,7 +176,7 @@ td.checkboxes-td {
   left: 4px;
   bottom: 4px;
   position: absolute;
-  transition: left 0.25s;
+  transition: left 0.15s;
 }
 .toggle:hover .toggle-switch:before {
   background: linear-gradient(to bottom, #fff 0%, #fff 100%);
