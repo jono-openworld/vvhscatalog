@@ -12,7 +12,9 @@ let showDeptMATH = true;
 let showDeptMCNL = true;
 let showDeptPE = true;
 let showDeptSCI = true;
+let showDeptSPED = true;
 let showDeptSS = true;
+let showDeptSTU = true;
 
 
 
@@ -192,9 +194,17 @@ function toggleShowHideDept(deptName){
         case "Dept-SCI":
             showDeptSCI = !showDeptSCI;
             break;
-
+        
+        case "Dept-SPED":
+            showDeptSPED = !showDeptSPED;
+            break;
+        
         case "Dept-SS":
             showDeptSS = !showDeptSS;
+            break;
+
+        case "Dept-STU":
+            showDeptSTU = !showDeptSTU;
             break;
 
         default:
@@ -234,6 +244,10 @@ function toggleShowHideDept(deptName){
 
     if (showDeptSS == true) {
         showSelector += '.Dept-SS,';
+    }
+
+    if (showDeptSTU == true) {
+        showSelector += '.Dept-STU,';
     }
 
     // Remove the final character from selectors
