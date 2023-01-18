@@ -8,6 +8,7 @@ let showTwelvethGrade = true;
 let showDeptCTE = true;
 let showDeptELA = true;
 let showDeptFA = true;
+let showDeptJROTC = true;
 let showDeptMATH = true;
 let showDeptMCNL = true;
 let showDeptPE = true;
@@ -178,7 +179,11 @@ function toggleShowHideDept(deptName){
         case "Dept-FA":
             showDeptFA = !showDeptFA;
             break;
-                
+
+        case "Dept-JROTC":
+            showDeptJROTC = !showDeptJROTC;
+            break;
+
         case "Dept-MATH":
             showDeptMATH = !showDeptMATH;
             break;
@@ -224,6 +229,10 @@ function toggleShowHideDept(deptName){
 
     if (showDeptFA == true) {
         showSelector += '.Dept-FA,';
+    }
+
+    if (showDeptJROTC == true) {
+        showSelector += '.Dept-JROTC,';
     }
 
     if (showDeptMATH == true) {
