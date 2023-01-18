@@ -93,10 +93,6 @@ h2.course-name {
 	text-align: left;
 }
 
-div.checkboxes {
-	padding-left: 10px;
-}
-
 div.course {
   padding-bottom: 20px;
 }
@@ -134,7 +130,7 @@ p.course-p {
 div.checkboxes-div {
     float: left;
     padding-top: 10px;
-    padding-left: 20px;
+    padding-left: 10px;
     padding-bottom: 10px;
 }
 
