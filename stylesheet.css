@@ -157,8 +157,8 @@ td.checkboxes-td {
   background: #ccc;
   background-color: #888;
   border-radius: 16px;
-  width: 60px;
-  height: 34px;
+  width: 42px;
+  height: 24px;
   position: relative;
   vertical-align: middle;
   transition: background 0.50s;
@@ -171,10 +171,10 @@ td.checkboxes-td {
   background: linear-gradient(to bottom, #fff 0%, #eee 100%);
   border-radius: 50%;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
+  height: 18px;
+  width: 18px;
+  left: 2px;
+  bottom: 3px;
   position: absolute;
   transition: left 0.50s;
 }
@@ -187,7 +187,7 @@ td.checkboxes-td {
 }
 
 .toggle-checkbox:checked + .toggle-switch:before {
-  left: 30px;
+  left: 21px;
 }
 
 .toggle-checkbox {
