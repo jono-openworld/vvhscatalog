@@ -172,7 +172,7 @@ td.checkboxes-td {
   left: 2px;
   bottom: 3px;
   position: absolute;
-  transition: left 0.50s;
+  transition: left 0.25s;
 }
 .toggle:hover .toggle-switch:before {
   background: linear-gradient(to bottom, #fff 0%, #fff 100%);
