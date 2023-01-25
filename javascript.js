@@ -34,11 +34,10 @@ let state = {
                                  true, true, true),
     grades: new Grades(true, true, true, true),
     courseDetails: false,
+    electives: true,
 }
 
 const checkboxes = {
-    courseDetails: document.querySelector('#detailsCheck'),
-
     deptCTE: document.querySelector('#Dept-CTE'),
     deptELA: document.querySelector('#Dept-ELA'),
     deptFA: document.querySelector('#Dept-FA'),
@@ -55,6 +54,10 @@ const checkboxes = {
     gradeTenth: document.querySelector('#tenthCheck'),
     gradeEleventh: document.querySelector('#eleventhCheck'),
     gradeTwelveth: document.querySelector('#twelvethCheck'), 
+
+    courseDetails: document.querySelector('#detailsCheck'),
+    electives: document.querySelector('#electives'),
+
 }
 
 init();
@@ -151,6 +154,12 @@ function updatePage() {
         if (checkboxes.courseDetails != null){
             checkboxes.courseDetails.checked = state.courseDetails;
         }
+
+        // Electives checkbox
+        if (checkboxes.electives != null){
+            checkboxes.electives.checked = state.electives;
+        }
+        
         
     }
 
@@ -163,6 +172,8 @@ function updatePage() {
     // Show or hide course details
     showHideCourseDetails();
 
+    // Show or hide electives
+    showHideElectives();
 }
 
 //////////////////////////////////////
@@ -259,6 +270,8 @@ checkboxes.deptSS.addEventListener('change', function () {
     }  
 });
 
+/**********************************************88888888888
+// Uncomment when SPED courses are added to the catalog
 checkboxes.deptSPED.addEventListener('change', function () {
     state = readState();
 
@@ -268,6 +281,8 @@ checkboxes.deptSPED.addEventListener('change', function () {
         updatePage();
     }  
 });
+*/
+
 
 checkboxes.deptSTU.addEventListener('change', function () {
     state = readState();
@@ -336,6 +351,18 @@ checkboxes.courseDetails.addEventListener('change', function () {
     }  
 });
 
+/////////////////////////////////
+// Electives event listener
+//
+checkboxes.electives.addEventListener('change', function () {
+    state = readState();
+
+    if (state != null){
+        state.electives = !state.electives;
+        writeState(state);
+        updatePage();
+    }  
+});
 
 ////////////////////////////////////
 // Show / Hide elements functions
@@ -363,6 +390,21 @@ function showHideCourseDetails(){
 
 	for (i = 0; i < coursesList.length; i++) {
 		if (state.courseDetails){
+			/* show */
+			coursesList[i].style.display="block";
+		}
+		else {
+			/* hide */
+			coursesList[i].style.display="none";
+		}
+	}
+}
+
+function showHideElectives(){
+	let coursesList = document.getElementsByClassName("electives");
+
+	for (i = 0; i < coursesList.length; i++) {
+		if (state.electives){
 			/* show */
 			coursesList[i].style.display="block";
 		}
