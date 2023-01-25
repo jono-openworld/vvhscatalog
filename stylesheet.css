@@ -138,6 +138,9 @@ table.checkboxes-table{
   padding-right: 50px;
 }
 
+th.checkboxes-th{
+  text-align: left;
+}
 td.checkboxes-td {
   padding: 5px;
 }
