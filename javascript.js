@@ -34,6 +34,7 @@ let state = {
                                  true, true, true),
     grades: new Grades(true, true, true, true),
     courseDetails: false,
+    nonElectives: true,
     electives: true,
 }
 
@@ -57,6 +58,7 @@ const checkboxes = {
 
     courseDetails: document.querySelector('#detailsCheck'),
     electives: document.querySelector('#electives'),
+    nonElectives: document.querySelector('#nonElectives'),
 
 }
 
@@ -155,11 +157,17 @@ function updatePage() {
             checkboxes.courseDetails.checked = state.courseDetails;
         }
 
+        // Nonelectives checkbox
+        if (checkboxes.nonElectives != null){
+            checkboxes.nonElectives.checked = state.nonElectives;
+        }
+
         // Electives checkbox
         if (checkboxes.electives != null){
             checkboxes.electives.checked = state.electives;
         }
         
+
         
     }
 
@@ -169,11 +177,18 @@ function updatePage() {
     // Show or hide grade levels
     showHideGrades();
 
+    
     // Show or hide course details
-    showHideCourseDetails();
+    showHideClass("course-details", 
+                   state.courseDetails);
+
+    // Show or hide non-electives
+    showHideClass("non-electives", 
+                   state.nonElectives);
 
     // Show or hide electives
-    showHideElectives();
+    showHideClass("electives", 
+                   state.electives);
 }
 
 //////////////////////////////////////
@@ -351,6 +366,22 @@ checkboxes.courseDetails.addEventListener('change', function () {
     }  
 });
 
+
+/////////////////////////////////
+// Non-Electives event listener
+//
+checkboxes.nonElectives.addEventListener('change', function () {
+    state = readState();
+
+    if (state != null){
+        state.nonElectives = !state.nonElectives;
+        writeState(state);
+        updatePage();
+    }  
+});
+
+
+
 /////////////////////////////////
 // Electives event listener
 //
@@ -385,11 +416,11 @@ function toggleDisplay(divId) {
 }
 
 
-function showHideCourseDetails(){
-	let coursesList = document.getElementsByClassName("course-details");
+function showHideClass(className, show){
+	let coursesList = document.getElementsByClassName(className);
 
 	for (i = 0; i < coursesList.length; i++) {
-		if (state.courseDetails){
+		if (show == true){
 			/* show */
 			coursesList[i].style.display="block";
 		}
@@ -400,20 +431,6 @@ function showHideCourseDetails(){
 	}
 }
 
-function showHideElectives(){
-	let coursesList = document.getElementsByClassName("electives");
-
-	for (i = 0; i < coursesList.length; i++) {
-		if (state.electives){
-			/* show */
-			coursesList[i].style.display="block";
-		}
-		else {
-			/* hide */
-			coursesList[i].style.display="none";
-		}
-	}
-}
 
 function getGradesSelector(grades){
     let showSelector = '';
