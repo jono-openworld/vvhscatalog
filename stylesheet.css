@@ -1,0 +1,202 @@
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, ".SFNSText-Regular", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
+}
+
+/* unvisited link */
+a:link {
+  color: #181818; 
+  text-decoration: underline;
+}
+
+/* visited link */
+a:visited {
+  color: #181818; 
+  text-decoration: underline;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+  background-color: #181818;  
+  text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+  color: #cbcbcb; 
+  background-color: #181818;  
+  text-decoration: underline;
+}
+
+.header {
+  	background-color: #181818;  
+	  color: white; 
+  	text-align: left;
+  	padding: 10px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #cbcbcb; 
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #181818;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #181818;  
+  color: white;
+}
+
+
+h1.header {
+	color: white;
+}
+
+h2.department {
+  color: #900C3F;
+  padding-left: 20px;
+	text-align: left;
+}
+
+h3.fa-subdepartment {
+  color: #0c3f90;
+  padding-left: 30px;
+	text-align: left;
+}
+
+h3.cte-subdepartment {
+  color: #0c3f90;
+  padding-left: 30px;
+	text-align: left;
+}
+
+h2.course-name {
+  color: #181818;
+	padding-left: 20px;
+	text-align: left;
+}
+
+div.course {
+  padding-bottom: 20px;
+}
+
+div.course-name {
+  color: #181818;
+  padding-left: 40px;
+}
+
+div.vertical-line {
+  padding-left: 20px;
+	padding-right: 20px;
+	
+  border-left: 1px;
+  border-left-style: solid;
+  border-left-color: #900C3F;
+}
+
+div.course-details {
+  color: #181818;
+
+  padding-left: 20px;
+	padding-right: 20px;
+	
+  text-align: left; 	  
+  margin-left: 40px;
+
+	width: 80%;
+}
+
+p.course-p {
+    line-height: 125%;
+}
+
+div.checkboxes-div {
+    float: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+table.checkboxes-table{
+  padding-right: 50px;
+}
+
+th.checkboxes-th{
+  text-align: left;
+}
+td.checkboxes-td {
+  padding: 5px;
+}
+
+
+.toggle {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.toggle-switch {
+  display: inline-block;
+  background: #ccc;
+  background-color: #888;
+  border-radius: 16px;
+  width: 42px;
+  height: 24px;
+  position: relative;
+  vertical-align: middle;
+  transition: background 0.50s;
+}
+.toggle-switch:before, .toggle-switch:after {
+  content: "";
+}
+.toggle-switch:before {
+  display: block;
+  background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+  height: 18px;
+  width: 18px;
+  left: 2px;
+  bottom: 3px;
+  position: absolute;
+  transition: left 0.25s;
+}
+.toggle:hover .toggle-switch:before {
+  background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+}
+.toggle-checkbox:checked + .toggle-switch {
+  background: #56c080;
+}
+
+.toggle-checkbox:checked + .toggle-switch:before {
+  left: 21px;
+}
+
+.toggle-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+
+.toggle-label {
+  margin-left: 5px;
+  position: relative;
+  top: 2px;
+}
+
